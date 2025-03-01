@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yothika Vithurson - Frontend Developer</title>
+    <title>Yothika Vithurson - Full Stack Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         /* Variables */
@@ -22,6 +22,8 @@
             --css: #264DE4;
             --vue: #42B883;
             --laravel: #FF2D20;
+            --python: #3776AB;
+            --java: #007396;
             --border-radius: 6px;
             --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
             --transition: all 0.3s ease;
@@ -329,6 +331,10 @@
             animation-delay: 0.4s;
         }
 
+        .section.active .skill-category:nth-child(5) {
+            animation-delay: 0.5s;
+        }
+
         .skill-category:hover {
             transform: translateY(-5px) scale(1.02);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
@@ -372,6 +378,10 @@
 
         .skill-category.tools {
             border-top: 3px solid var(--javascript);
+        }
+
+        .skill-category.languages {
+            border-top: 3px solid var(--python);
         }
 
         .skill-tags {
@@ -490,6 +500,18 @@
             border: 1px solid rgba(94, 129, 172, 0.3);
         }
 
+        .tag-python {
+            background-color: rgba(55, 118, 171, 0.1);
+            color: #234B6E;
+            border: 1px solid rgba(55, 118, 171, 0.3);
+        }
+
+        .tag-java {
+            background-color: rgba(0, 115, 150, 0.1);
+            color: #00476A;
+            border: 1px solid rgba(0, 115, 150, 0.3);
+        }
+
         /* Experience & Project Cards */
         .timeline {
             position: relative;
@@ -540,6 +562,10 @@
 
         .section.active .card:nth-child(3) {
             animation-delay: 0.6s;
+        }
+
+        .section.active .card:nth-child(4) {
+            animation-delay: 0.8s;
         }
 
         .card:hover {
@@ -860,7 +886,7 @@
                     <span class="first-name">YOTHIKA</span> 
                     <span class="last-name">VITHURSON</span>
                 </h1>
-                <p class="title">Frontend Developer & UI/UX Specialist</p>
+                <p class="title">Full Stack Developer</p>
             </div>
             <div class="header-right">
                 <ul class="contact-info">
@@ -878,7 +904,7 @@
                 <h2>About Me</h2>
             </div>
             <div class="summary">
-                <p>Creative Frontend Developer with a passion for crafting engaging user experiences and responsive web applications. Specializing in React.js, JavaScript and modern UI frameworks with a strong foundation in backend technologies. Proven track record building financial interfaces and educational applications with a focus on clean, maintainable code and pixel-perfect design implementation. Recently relocated to Cambridge and eager to contribute to innovative digital projects that push the boundaries of web technology.</p>
+                <p>Versatile Full Stack Developer with expertise in both frontend and backend technologies. Proficient in creating robust web applications using React.js, Laravel, and modern frameworks, with strong foundational knowledge in Java and Python. Experience spans financial interfaces, educational applications, and data visualization tools with a focus on clean, maintainable code and responsive design. Recently relocated to Cambridge and eager to contribute to innovative projects that leverage my comprehensive technical skill set.</p>
             </div>
         </section>
 
@@ -900,7 +926,6 @@
                         <span class="skill-tag tag-vue">Vue.js</span>
                         <span class="skill-tag tag-bootstrap">Bootstrap</span>
                         <span class="skill-tag tag-ui">Responsive Design</span>
-                        <span class="skill-tag tag-ui">UI/UX Principles</span>
                     </div>
                 </div>
                 
@@ -913,6 +938,17 @@
                         <span class="skill-tag tag-mysql">MySQL</span>
                         <span class="skill-tag tag-mongo">MongoDB</span>
                         <span class="skill-tag tag-js">RESTful APIs</span>
+                    </div>
+                </div>
+                
+                <!-- Programming Languages -->
+                <div class="skill-category languages">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag tag-python">Python</span>
+                        <span class="skill-tag tag-java">Java</span>
+                        <span class="skill-tag tag-js">JavaScript</span>
+                        <span class="skill-tag tag-php">PHP</span>
                     </div>
                 </div>
                 
@@ -932,7 +968,7 @@
                         <span class="skill-tag tag-git">Git</span>
                         <span class="skill-tag tag-git">GitLab</span>
                         <span class="skill-tag tag-ui">Agile Development</span>
-                        <span class="skill-tag tag-ui">Responsive Design</span>
+                        <span class="skill-tag tag-ui">UI/UX Design</span>
                     </div>
                 </div>
             </div>
@@ -949,16 +985,16 @@
                 <div class="card">
                     <span class="card-date">Apr 2023 - Oct 2023</span>
                     <div class="card-header">
-                        <h3 class="card-title">Frontend Developer</h3>
+                        <h3 class="card-title">Full Stack Developer</h3>
                         <p class="card-subtitle">Travcal, Sri Lanka</p>
                     </div>
-                    <p class="card-description">Led frontend development efforts for financial applications and created responsive interfaces that enhanced user experience.</p>
+                    <p class="card-description">Built the entire stack of Travcal's Bank Reconciliation Interface and created responsive applications that enhanced operational efficiency.</p>
                     <ul class="card-bullets">
-                        <li>Architected and built the frontend of Travcal's Bank Reconciliation Interface using advanced JavaScript and responsive design principles</li>
+                        <li>Architected and implemented both frontend and backend components of the Bank Reconciliation Interface using Laravel, JavaScript, and MySQL</li>
                         <li>Developed interactive dashboards that visualized complex financial data for easy interpretation</li>
                         <li>Implemented responsive UI components that adapted seamlessly across devices and screen sizes</li>
-                        <li>Collaborated with backend developers to integrate RESTful APIs and optimize data exchange</li>
-                        <li>Applied modern frontend architecture patterns to ensure maintainable and scalable code</li>
+                        <li>Engineered RESTful APIs to integrate third-party banking services and streamline data exchange</li>
+                        <li>Applied modern architecture patterns to ensure high performance, security, and scalability</li>
                     </ul>
                 </div>
 
@@ -969,13 +1005,13 @@
                         <h3 class="card-title">Technical Instructor</h3>
                         <p class="card-subtitle">University of Jaffna, Sri Lanka</p>
                     </div>
-                    <p class="card-description">Instructed university students in frontend technologies and created practical curriculum materials.</p>
+                    <p class="card-description">Instructed university students in bioinformatics and various technologies including Java, Laravel, and MySQL.</p>
                     <ul class="card-bullets">
-                        <li>Designed and delivered comprehensive courses in web development technologies including JavaScript and React.js</li>
-                        <li>Created hands-on workshops that translated complex frontend concepts into accessible learning materials</li>
-                        <li>Mentored student groups on web application projects, providing UI/UX guidance and code reviews</li>
-                        <li>Developed innovative teaching materials that enhanced student engagement with modern web technologies</li>
-                        <li>Collaborated with faculty to align curriculum with current industry frontend development practices</li>
+                        <li>Designed and delivered comprehensive courses in both frontend and backend technologies</li>
+                        <li>Created hands-on workshops in Java, Laravel, and MySQL that translated complex concepts into accessible learning materials</li>
+                        <li>Mentored student groups on software development projects, providing technical guidance and code reviews</li>
+                        <li>Developed teaching materials for programming fundamentals and bioinformatics applications</li>
+                        <li>Collaborated with faculty to align curriculum with current industry practices across multiple languages and frameworks</li>
                     </ul>
                 </div>
 
@@ -983,16 +1019,16 @@
                 <div class="card">
                     <span class="card-date">Jan 2020 - Jul 2020</span>
                     <div class="card-header">
-                        <h3 class="card-title">Frontend Developer Intern</h3>
+                        <h3 class="card-title">Intern Software Engineer</h3>
                         <p class="card-subtitle">Apptimus Tech, Sri Lanka</p>
                     </div>
-                    <p class="card-description">Contributed to mobile and web application frontend development as part of cross-functional teams.</p>
+                    <p class="card-description">Contributed to mobile and web application development as a fullstack developer working across the entire technology stack.</p>
                     <ul class="card-bullets">
                         <li>Developed responsive user interfaces for multiple client projects using Flutter for mobile and React JS for web</li>
-                        <li>Implemented UI designs with precision, maintaining pixel-perfect fidelity to design mockups</li>
+                        <li>Implemented database models and queries using MySQL for backend operations</li>
                         <li>Created reusable component libraries that accelerated development across multiple projects</li>
-                        <li>Participated in UI/UX discussions and provided implementation insights to improve user experience</li>
-                        <li>Gained practical experience in modern frontend development workflows and best practices</li>
+                        <li>Participated in full development lifecycle from requirements gathering to deployment</li>
+                        <li>Gained practical experience in industry-standard development tools and methodologies</li>
                     </ul>
                 </div>
             </div>
@@ -1009,21 +1045,21 @@
                 <div class="card">
                     <span class="card-date">Apr 2023 - Oct 2023</span>
                     <div class="card-header">
-                        <h3 class="card-title">Financial Dashboard Interface</h3>
+                        <h3 class="card-title">Bank Reconciliation System</h3>
                         <p class="card-subtitle">Travcal, Sri Lanka</p>
                     </div>
                     <ul class="card-bullets">
-                        <li>Designed and developed an intuitive frontend for a financial reconciliation system with interactive data visualization</li>
+                        <li>Designed and built a complete financial reconciliation system for processing banking transactions</li>
                         <li>Created responsive components that provided optimized experiences on both desktop and mobile devices</li>
-                        <li>Implemented complex state management using React hooks and context API for efficient data handling</li>
+                        <li>Implemented secure API integrations with multiple banking systems for automated data exchange</li>
                         <li>Built custom charting components to visualize financial trends and transaction patterns</li>
                     </ul>
                     <div style="margin-top: 15px;">
+                        <span class="tech-tag">Laravel</span>
                         <span class="tech-tag">React.js</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">MySQL</span>
                         <span class="tech-tag">RESTful APIs</span>
-                        <span class="tech-tag">Chart.js</span>
+                        <span class="tech-tag">JavaScript</span>
                     </div>
                 </div>
 
@@ -1031,24 +1067,47 @@
                 <div class="card">
                     <span class="card-date">Sep 2020 - Mar 2021</span>
                     <div class="card-header">
-                        <h3 class="card-title">Sentiment Analysis Visualization Tool</h3>
+                        <h3 class="card-title">Sentiment Analysis Based on Hybrid Approach</h3>
                         <p class="card-subtitle">Research Project, University of Jaffna</p>
                     </div>
                     <ul class="card-bullets">
-                        <li>Developed the frontend interface for a machine learning research project that analyzed sentiment in text data</li>
+                        <li>Conducted research to improve sentiment analysis accuracy by combining multiple machine learning approaches</li>
+                        <li>Implemented and compared performance of SVM, Naive Bayes, and ensemble classifier methods</li>
                         <li>Created interactive visualizations that displayed classification results and algorithm performance metrics</li>
-                        <li>Designed intuitive user controls for dataset selection and algorithm parameter adjustments</li>
-                        <li><strong>Outcome:</strong> Enhanced project with data visualizations that improved understanding of classification results</li>
+                        <li>Performed data preprocessing, feature extraction, and model evaluation on diverse text datasets</li>
+                        <li><strong>Outcome:</strong> Achieved 8% improvement in classification accuracy compared to baseline methods</li>
                     </ul>
                     <div style="margin-top: 15px;">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">NLTK</span>
                         <span class="tech-tag">JavaScript</span>
                         <span class="tech-tag">D3.js</span>
-                        <span class="tech-tag">HTML5/CSS3</span>
-                        <span class="tech-tag">Python (backend)</span>
                     </div>
                 </div>
 
                 <!-- Project 3 -->
+                <div class="card">
+                    <span class="card-date">Jun 2018 - Mar 2019</span>
+                    <div class="card-header">
+                        <h3 class="card-title">Stock Management and Billing System</h3>
+                        <p class="card-subtitle">University Project</p>
+                    </div>
+                    <ul class="card-bullets">
+                        <li>Developed a standalone Java application for inventory management and sales processing</li>
+                        <li>Implemented features for stock tracking, purchase orders, and sales invoice generation</li>
+                        <li>Designed and implemented a relational database schema for efficient data storage and retrieval</li>
+                        <li>Built a responsive user interface using Java Swing components</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">NetBeans</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Java Swing</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
                 <div class="card">
                     <span class="card-date">Mar 2020 - Jul 2020</span>
                     <div class="card-header">
@@ -1056,15 +1115,16 @@
                         <p class="card-subtitle">Apptimus Tech, Sri Lanka</p>
                     </div>
                     <ul class="card-bullets">
-                        <li>Led frontend implementation for a comprehensive event management platform spanning mobile and web interfaces</li>
+                        <li>Contributed to development of a comprehensive event management platform spanning mobile and web interfaces</li>
                         <li>Developed responsive UI components for the mobile application using Flutter</li>
                         <li>Created interactive dashboards and scheduling interfaces using React.js</li>
-                        <li>Implemented real-time updates and notifications using WebSockets</li>
+                        <li>Integrated frontend with Java-based backend services via RESTful APIs</li>
                     </ul>
                     <div style="margin-top: 15px;">
                         <span class="tech-tag">Flutter</span>
                         <span class="tech-tag">React.js</span>
-                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">MySQL</span>
                         <span class="tech-tag">RESTful APIs</span>
                     </div>
                 </div>
@@ -1085,9 +1145,10 @@
                 </div>
                 <p class="card-description">First Class Honors equivalent with GPA 3.61/4.00</p>
                 <ul class="card-bullets">
-                    <li>Specialized in Web Technologies and UI/UX Development</li>
-                    <li>Relevant coursework: UI/UX Design, Web Development, Mobile Application Development, Human-Computer Interaction</li>
-                    <li>Final Year Project: Created interactive visualization tools for sentiment analysis research</li>
+                    <li>Comprehensive curriculum covering both frontend and backend technologies</li>
+                    <li>Relevant coursework: Data Structures & Algorithms, Database Systems, Software Engineering, Web Development, Mobile Application Development</li>
+                    <li>Completed multiple projects using Java, Python, and web technologies</li>
+                    <li>Final Year Research: Sentiment Analysis Based on Hybrid Approach using Python and machine learning</li>
                 </ul>
             </div>
         </section>
@@ -1104,8 +1165,8 @@
                     <h3><i class="fas fa-laptop-code"></i> Continuous Learning</h3>
                     <ul class="card-bullets">
                         <li><strong>Currently</strong> - Advanced React patterns and Next.js</li>
-                        <li><strong>2023</strong> - Responsive design and mobile-first approaches</li>
-                        <li><strong>2022</strong> - UI/UX principles for financial applications</li>
+                        <li><strong>2023</strong> - AWS cloud services and containerization</li>
+                        <li><strong>2022</strong> - Advanced Laravel techniques for scalable applications</li>
                     </ul>
                 </div>
                 
